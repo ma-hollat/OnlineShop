@@ -19,7 +19,8 @@ app.use(function(req, res, next){
     res.status(404).render('404',{
         pageTitle:"Oops! Page not found!",
         pageNotFound: "No Luck, Try Again!",
-        myVariable:   "Hello World"
+        myVariable:   "Hello World",
+        path:  ''
     });
 
     //res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));

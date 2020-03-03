@@ -12,6 +12,7 @@ router.get('/', function(req, res){
     console.log("Hello from shop", products);
     res.render('shop', {
         pageTitle: "Welcome",
+        path: '/',
         welcomToMeShop: "Welcome To Me Shop",
         listOfProducts: products
     });
